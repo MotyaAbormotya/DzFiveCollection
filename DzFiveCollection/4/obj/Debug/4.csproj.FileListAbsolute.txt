@@ -1,0 +1,6 @@
+C:\Users\User\source\repos\DzFiveCollection\4\bin\Debug\4.exe.config
+C:\Users\User\source\repos\DzFiveCollection\4\bin\Debug\4.exe
+C:\Users\User\source\repos\DzFiveCollection\4\bin\Debug\4.pdb
+C:\Users\User\source\repos\DzFiveCollection\4\obj\Debug\4.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DzFiveCollection\4\obj\Debug\4.exe
+C:\Users\User\source\repos\DzFiveCollection\4\obj\Debug\4.pdb
