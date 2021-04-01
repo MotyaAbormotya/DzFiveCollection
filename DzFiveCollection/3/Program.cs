@@ -25,7 +25,7 @@ namespace _3
             string menu;
             bool exit = false;
 
-            AddingDossier(dossier);
+            AddDossier(dossier);
 
             while (exit == false)
             {
@@ -38,14 +38,14 @@ namespace _3
                         Search(searchName, dossier);
                         break;
                     case "Del":
-                        string nameForDel = Console.ReadLine();
-                        Delete(nameForDel, dossier);
+                        string nameForDelete = Console.ReadLine();
+                        Delete(nameForDelete, dossier);
                         break;
                     case "Exit":
                         Exit(out exit);
                         break;
                     case "Add":
-                        AddingDossier(dossier);
+                        AddDossier(dossier);
                         break;
                     case "Show":
                         Show(dossier);
@@ -54,9 +54,12 @@ namespace _3
             }
         }
 
-        public static Dictionary<string, string> Delete(string nameForDel, Dictionary<string, string> dossier)
+        public static Dictionary<string, string> Delete(string nameForDelete, Dictionary<string, string> dossier)
         {
-            dossier.Remove(nameForDel);
+            if (dossier.ContainsKey(nameForDelete) == true)
+                dossier.Remove(nameForDelete);
+            else
+                Console.WriteLine("Такого досье не существует");
             return dossier;
         }
 
@@ -66,7 +69,7 @@ namespace _3
 
             foreach (var item in dossier)
             {
-                Console.Write(item + " ");
+                Console.Write($"{item.Key} - {item.Value}");
             }
 
             Console.WriteLine();
@@ -77,17 +80,17 @@ namespace _3
             exit = true;
         }
 
-        public static void Search(string searchName, Dictionary<string, string> dossier)
+        public static void Search(string searchSurname, Dictionary<string, string> dossier)
         {
             Console.WriteLine();
-            if (dossier.ContainsKey(searchName) == true)
+            if (dossier.ContainsKey(searchSurname) == true)
             {
-                Console.WriteLine(searchName + " " + dossier[searchName]);
+                Console.WriteLine(searchSurname + " " + dossier[searchSurname]);
                 Console.WriteLine();
             }
         }
 
-        public static Dictionary<string, string> AddingDossier(Dictionary<string, string> dossier)
+        public static Dictionary<string, string> AddDossier(Dictionary<string, string> dossier)
         {
             Console.Write("Фамилия: ");
             string name = Console.ReadLine();

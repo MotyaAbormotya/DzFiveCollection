@@ -4,3 +4,4 @@ C:\Users\User\source\repos\DzFiveCollection\2withHeashSet\bin\Debug\2withHeashSe
 C:\Users\User\source\repos\DzFiveCollection\2withHeashSet\obj\Debug\2withHeashSet.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\DzFiveCollection\2withHeashSet\obj\Debug\2withHeashSet.exe
 C:\Users\User\source\repos\DzFiveCollection\2withHeashSet\obj\Debug\2withHeashSet.pdb
+C:\Users\User\source\repos\DzFiveCollection\2withHeashSet\obj\Debug\2withHeashSet.csprojAssemblyReference.cache

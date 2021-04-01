@@ -16,16 +16,17 @@ namespace _2withHeashSet
 
             Random random = new Random();
 
-            for (int i = 0; numbers.Count != 10; i++)
+            while (numbers.Count < 10)
             {
                 int randomNumber = random.Next(1, 10 + 1);
                 numbers.Add(randomNumber);
-            }
+            } 
 
             foreach(var item in numbers)
             {
                 Console.Write(item + " ");
             }
+
             Console.ReadKey();
         }
     }

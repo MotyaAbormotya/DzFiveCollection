@@ -10,38 +10,33 @@ namespace _5
     {
         static void Main(string[] args)
         {
-//            вас есть множество целых чисел.Каждое целое число - это сумма покупки.
-//Вам нужно обслуживать клиентов до тех пор, пока очередь не станет пуста.
-//После каждого обслуженного клиента деньги нужно добавлять на наш счёт и выводить его в консоль.
-//После обслуживания каждого клиента программа ожидает нажатия любой клавиши, после чего
-//затирает консоль и по новой выводит всю информацию, только уже со следующим клиентом
+            //            вас есть множество целых чисел.Каждое целое число - это сумма покупки.
+            //Вам нужно обслуживать клиентов до тех пор, пока очередь не станет пуста.
+            //После каждого обслуженного клиента деньги нужно добавлять на наш счёт и выводить его в консоль.
+            //После обслуживания каждого клиента программа ожидает нажатия любой клавиши, после чего
+            //затирает консоль и по новой выводит всю информацию, только уже со следующим клиентом
             Queue<int> sum = new Queue<int>();
             int scoreMoney = 0;
             Random random = new Random();
 
-            for (int i = 0; i < 5; i++)
+            while (sum.Count < 5)
             {
                 sum.Enqueue(random.Next(1, 50 + 1));
             }
 
-            foreach (var item in sum)
-            {
-                Console.Write(item + " ");
-            }
-
             Console.WriteLine();
 
-            scoreMoney = Sum(sum);
+            scoreMoney = SumMyMoney(sum);
 
             Console.WriteLine(scoreMoney);
             Console.ReadKey();
         }
 
-        public static int Sum(Queue<int> sum)
+        public static int SumMyMoney(Queue<int> sum)
         {
             int scoreMoney = 0;
 
-            for (int i = 0; sum.Count > 0; i++)
+            while (sum.Count > 0)
             {
                 Console.WriteLine("Производиться обслуживание");
                 scoreMoney += sum.Dequeue();

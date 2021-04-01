@@ -14,16 +14,10 @@ namespace _4
             //    введенными с консоли, начиная со дна корзины. Затем выложить товары из корзины, начиная с верхних
 
             Stack<string> foodInBasket = new Stack<string>();
-
-            foodInBasket.Push(Console.ReadLine());
-
-            foodInBasket.Push(Console.ReadLine());
-
-            foodInBasket.Push(Console.ReadLine());
-
-            foodInBasket.Push(Console.ReadLine());
-
-            foodInBasket.Push(Console.ReadLine());
+            for (int i = 0; i < 5; i++)
+            {
+                foodInBasket.Push(Console.ReadLine());
+            }
 
             foreach(var item in foodInBasket)
             {
@@ -32,7 +26,7 @@ namespace _4
 
             Console.WriteLine();
 
-            for (int i = 0; foodInBasket.Count > 0; i++)
+            while (foodInBasket.Count > 0)
             {
                 Console.WriteLine("Вытаскиваем продукт .....");
                 foodInBasket.Pop();
