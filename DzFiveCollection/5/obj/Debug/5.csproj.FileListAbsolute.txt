@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\DzFiveCollection\5\bin\Debug\5.exe.config
+C:\Users\User\source\repos\DzFiveCollection\5\bin\Debug\5.exe
+C:\Users\User\source\repos\DzFiveCollection\5\bin\Debug\5.pdb
+C:\Users\User\source\repos\DzFiveCollection\5\obj\Debug\5.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\DzFiveCollection\5\obj\Debug\5.exe
+C:\Users\User\source\repos\DzFiveCollection\5\obj\Debug\5.pdb
+C:\Users\User\source\repos\DzFiveCollection\5\obj\Debug\5.csprojAssemblyReference.cache
